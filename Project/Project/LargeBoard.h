@@ -1,22 +1,23 @@
-#ifndef BOARD_H
-#define BOARD_H
+#ifndef LARGEBOARD_H
+#define LARGEBOARD_H
 
 #include<string>
 #include<iostream>
+#include "Board.h"
 using std::string;
 using std::ostream;
-class Board
+class LargeBoard
 {
 private:
-	char board[3][3];
+	Board board[3][3];
 
 
 public:
-	Board();
+	LargeBoard();
 	void printBoard(ostream& out);
 	bool checkDraw() const;
 	char checkWinner() const;
-	
+
 
 };
 
