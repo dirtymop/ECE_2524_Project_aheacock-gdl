@@ -14,7 +14,8 @@ private:
 public:
 	Board();
 	void printBoard(ostream& out);
-
+	bool checkDraw() const;
+	bool checkWin() const;
 
 };
 
